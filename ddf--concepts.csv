@@ -1,0 +1,5 @@
+concept,name,concept_type
+infant_mortality_rate,Infant Mortality Rate,measure
+area,Area,entity_domain
+year,Year,time
+name,Name,string

@@ -1,0 +1,5 @@
+key,value,file
+concept,name,ddf--concepts.csv
+concept,concept_type,ddf--concepts.csv
+"area,year",infant_mortality_rate,ddf--datapoints--infant_mortality_rate--by--area--year.csv
+area,name,ddf--entities--area.csv
