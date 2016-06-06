@@ -17,7 +17,7 @@ dp_id = to_concept_id(dp_name)
 if __name__ == '__main__':
 
     # reading data
-    data001 = pd.read_excel(source, sheetname='Data')
+    data001 = pd.read_excel(source, sheetname='Data', na_values=['-', '.'])
     data001 = data001.rename(columns={dp_name_sheet: 'area'})
 
     data001_dp = data001.set_index('area').T
