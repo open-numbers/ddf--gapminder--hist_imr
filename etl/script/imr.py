@@ -47,6 +47,9 @@ if __name__ == '__main__':
     cdf['name'] = [dp_name, 'Area', 'Year', 'Name']
     cdf['concept_type'] = ['measure', 'entity_domain', 'time', 'string']
 
+    cdf.to_csv(os.path.join(out_dir, 'ddf--concepts.csv'), index=False)
+
+
     # index
     create_index_file(out_dir)
 
