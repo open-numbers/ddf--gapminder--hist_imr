@@ -1,0 +1,62 @@
+{
+    "name": "ddf--gapminder--hist_imr",
+    "language": {
+        "id": "en"
+    },
+    "resources": [
+        {
+            "path": "ddf--concepts.csv",
+            "name": "ddf--concepts",
+            "schema": {
+                "primaryKey": "concept",
+                "fields": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "concept_type"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--infant_mortality_rate--by--area--year.csv",
+            "name": "ddf--datapoints--infant_mortality_rate--by--area--year",
+            "schema": {
+                "primaryKey": [
+                    "area",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "area"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "infant_mortality_rate"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--entities--area.csv",
+            "name": "ddf--entities--area",
+            "schema": {
+                "primaryKey": "area",
+                "fields": [
+                    {
+                        "name": "area"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ]
+            }
+        }
+    ]
+}
